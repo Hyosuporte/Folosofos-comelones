@@ -20,6 +20,22 @@ public class filosofo implements Runnable{
         this.cucharaDe = cucharaDe;
         this.tiempos = tiempos;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public Cuchara getCucharaIz() {
+        return cucharaIz;
+    }
+
+    public Cuchara getCucharaDe() {
+        return cucharaDe;
+    }
+
+    public controlador getTiempos() {
+        return tiempos;
+    }
     
     public void pensando() throws InterruptedException {
         long tiempo = tiempos.getTiempo();

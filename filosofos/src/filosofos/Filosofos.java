@@ -17,8 +17,6 @@ public class Filosofos {
         controlador control = new controlador();
         Thread cenar = new Thread(control);
         logger.info("Comenzo la cena");
-        cenar.start();
-        cenar.join();
     }
 
 }
